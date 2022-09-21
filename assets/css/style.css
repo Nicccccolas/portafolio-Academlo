@@ -42,7 +42,7 @@ footer {
   margin: 1.5rem;
   font-weight: 600;
   color: #f1a600;
-  background-color: #242635;
+  background-color: #1f1d2c;
 }
 
 /** Navbar */
@@ -75,7 +75,7 @@ footer {
 }
 
 .menu__icon {
-  font-size: 1.5rem;
+  font-size: 2.2rem;
 }
 
 .menu__list {
@@ -125,6 +125,7 @@ footer {
   }
 
   .menu--open {
+    /* margin-top: 2rem; */
     margin-right: 2rem;
     cursor: pointer;
   }
@@ -141,8 +142,8 @@ footer {
 
   .menu__list {
     justify-content: end;
-    font-size: 1.2rem;
-    gap: 4rem;
+    font-size: 1rem;
+    gap: 3.5rem;
   }
 
   .menu--open {
