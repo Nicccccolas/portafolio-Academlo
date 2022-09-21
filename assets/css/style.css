@@ -450,8 +450,9 @@ footer {
     text-align: center;
     margin: 1rem;
     font-weight: 300;
-    color: #e5e5e5;
+    color: #f1a600;
     font-size: 0.8rem;
+    background-color: #242635;
   }
 }
 
