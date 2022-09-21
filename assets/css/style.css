@@ -42,7 +42,6 @@ footer {
   margin: 1.5rem;
   font-weight: 600;
   color: #e5e5e5;
-
 }
 
 /** Navbar */
@@ -178,21 +177,18 @@ footer {
 
   /** home */
   .home__content {
-    margin: 2rem;
+    margin: 2.5rem;
     display: flex;
     flex-direction: column;
     text-align: center;
-    gap: 1rem;
   }
 
   .home__info {
     width: 100%;
     height: inherit;
-    padding: 0 1rem 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
   }
 
   .home__name {
@@ -202,14 +198,14 @@ footer {
   }
 
   .home__description {
-    padding: 1rem;
+    padding: 0 1.3rem;
     font-size: 1.2rem;
     font-weight: 200;
   }
 
   .home__image {
     position: relative;
-    width: 17rem;
+    width: 16rem;
   }
 
   .home__social {
@@ -225,12 +221,12 @@ footer {
   }
 
   .home__icons {
-    padding: 1rem;
     gap: 1.5rem;
   }
 
   .home__icons img {
     width: 2.5rem;
+    border-radius: 0;
   }
 
   .about {
@@ -244,17 +240,17 @@ footer {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 3rem;
+    gap: 2rem;
   }
 
   .about__title {
     font-size: 2.5rem;
-    font-weight: 500;
+    font-weight: 400;
   }
 
   .about__description {
     font-size: .8rem;
-    font-weight: 300;
+    font-weight: 200;
   }
 
   .about__icons {
@@ -270,18 +266,18 @@ footer {
   }
 
   .about__icons span {
-    font-weight: 700;
+    font-weight: 600;
   }
 
   /** Experience */
   .experience {
     color: #e5e5e5;
     background-color: #1f1d2c;
-    padding: 2rem 2rem;
+    padding: 1rem 3rem;
   }
 
   .experience__content {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -290,9 +286,9 @@ footer {
     font-size: 0.7rem;
   }
 
-  .experience h2 {
-    font-size: 2.7rem;
-    font-weight: 600;
+  .experience__title {
+    font-size: 2.5rem;
+    font-weight: 500;
   }
 
   .experience1,
@@ -309,23 +305,35 @@ footer {
   }
 
   .experience__description span {
-    font-weight: 700;
-    font-size: 1rem;
+    font-weight: 600;
+    font-size: .8rem;
   }
 
   .experience img {
     width: 4rem;
-    height: 4rem;
+  }
+
+  .skills__image {
+    border-radius: 1rem;
+    width: 5rem;
+    background-color: #e5e5e5;
   }
 
   .years {
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 600;
   }
 
   /** Projects */
   .projects {
-    padding: 2rem 2rem
+    padding: 0 4rem;
+    margin: 4rem 0;
+    text-align: center
+  }
+
+  .project__title {
+    font-size: 2.5rem;
+    font-weight: 400;
   }
 
   .project__content {
@@ -335,15 +343,16 @@ footer {
     gap: 1rem;
   }
 
-  .projects h2 {
-    font-size: 2.5rem;
-    font-weight: 600;
-  }
-
   /** Contact */
   .contact {
-    padding: 2rem 3rem;
+    padding: 2.5rem 3rem;
     background-color: #242635;
+  }
+
+  .contact__title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 400;
   }
 
   .contact__content {
@@ -353,19 +362,96 @@ footer {
     text-align: center;
   }
 
-  .contact img {
-    width: 4rem;
+  .contact__form {
+    background-color: #242635;
+    max-width: 80%;
+    margin-left: 2.5rem;
+    border-radius: 1rem;
   }
 
-  .contact h2 {
-    font-size: 2.5rem;
-    font-weight: 600;
+  .header__contact {
+    width: 100%;
+    background-color: #1f1d2c;
+    overflow: hidden;
+    color: #f1a600;
+    border-radius: 1rem;
+  }
+
+  .header__image {
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+  }
+
+  .form {
+    padding: .5rem;
+    overflow: hidden;
+    color: #e5e5e5;
+  }
+
+  .form label,
+  .form input,
+  .form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 2px;
+    border-radius: 0.3rem;
+  }
+
+  .form label {
+    font-size: .8rem;
+    font-weight: 400;
+  }
+
+  .form input:not([type='submit']),
+  .form textarea {
+    border: none;
+    border-bottom: 2px solid #f1a600;
+    margin-bottom: .4rem;
+    font-size: .7rem;
+    outline: none;
+    color: #242635;
+  }
+
+  .form textarea {
+    min-height: 100px;
+  }
+
+  input[type='submit'] {
+    padding: 10px;
+    border: none;
+    background-color: #f1a600;
+    color: #242635;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  .contact__icons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1.5rem;
+  }
+
+  .phone,
+  .mail {
+    width: 4rem;
+    font-size: .6rem;
+    font-weight: 300;
+    text-align: center;
   }
 
   .phone span,
   .mail span {
-    font-size: 1.2rem;
     font-weight: 600;
+    color: #f1a600;
+  }
+
+  footer {
+    text-align: center;
+    margin: 1rem;
+    font-weight: 300;
+    color: #e5e5e5;
+    font-size: 0.8rem;
   }
 }
 
@@ -373,13 +459,14 @@ footer {
 
 @media (min-width: 768px) {
   .home {
-    margin-bottom: 2rem;
-    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+    padding: 1.5rem 2rem;
   }
 
   .home__content {
     display: grid;
     grid-template-columns: 2fr 1.5fr;
+    align-items: center;
   }
 
   .home__info {
@@ -395,7 +482,7 @@ footer {
   }
 
   .home__description {
-    padding: 0.5rem 3rem 1rem 0;
+    padding: 0.5rem 2rem 1rem 0;
     font-size: 1.3rem;
     font-weight: 200;
   }
@@ -411,12 +498,11 @@ footer {
     flex-direction: column;
     text-align: center;
     position: relative;
-    margin-top: 1rem;
     padding-right: 3rem;
     align-items: center;
     font-size: 1.4rem;
     font-weight: 300;
-    gap: 2rem
+    gap: 1rem
   }
 
   .home__social span {
@@ -436,7 +522,7 @@ footer {
 
   /** About */
   .about {
-    padding: 3rem 2rem;
+    padding: 2rem 2rem;
     height: auto;
     background-color: #242635;
   }
@@ -447,7 +533,7 @@ footer {
   }
 
   .about__info {
-    margin: 3rem 3rem;
+    margin: 3rem 3.5rem;
   }
 
   .about__title {
@@ -468,7 +554,7 @@ footer {
   }
 
   .about__icons img {
-    width: 7rem;
+    width: 6rem;
   }
 
   /** Experience */
@@ -479,13 +565,13 @@ footer {
   }
 
   .experience__content {
-    margin: 5rem;
+    margin: 1rem;
     display: flex;
     flex-direction: column;
     text-align: center;
     gap: 1.5rem;
     align-self: flex-start;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .experience__title {
@@ -508,12 +594,12 @@ footer {
 
   .experience__description span {
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .skills__image {
     border-radius: 1rem;
-    width: 7rem;
+    width: 5rem;
     background-color: #e5e5e5;
   }
 
@@ -529,14 +615,14 @@ footer {
 
   /** Projects */
   .projects {
-    background-color: #242635;  
-    padding: 3rem 20px;
+    background-color: #242635;
+    padding: 3.5rem 1rem;
   }
 
   .project__content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    gap: 1rem;
     max-width: max-content;
     padding: 2rem;
   }
@@ -544,11 +630,11 @@ footer {
   .projects h2 {
     display: flex;
     font-size: 2.5rem;
-    font-weight: 600;
+    font-weight: 500;
     justify-content: center;
   }
 
-  .project__container{
+  .project__container {
     border-radius: 2rem;
     box-shadow: 3px 3px 8px #1f1d2c;
   }
@@ -561,15 +647,14 @@ footer {
   .contact__title {
     display: flex;
     justify-content: center;
-    font-size: 3rem;
-    font-weight: 600;
+    font-size: 2.5rem;
+    font-weight: 500;
   }
 
   .contact__items {
     display: grid;
-    margin: 3rem;
-    padding: 3rem;
-    gap: 2rem;
+    padding: 1rem;
+    gap: 1.5rem;
     align-content: center;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -590,14 +675,14 @@ footer {
   }
 
   .header__image {
-    font-size: 7rem;
+    font-size: 4rem;
     display: block;
     text-align: center;
-    padding: 1rem;
+    padding: .5rem;
   }
 
   .form {
-    padding: .8rem;
+    padding: .5rem;
     overflow: hidden;
     color: #e5e5e5;
   }
@@ -612,13 +697,13 @@ footer {
   }
 
   .form label {
-    font-weight: 500;
+    font-weight: 400;
   }
 
   .form input:not([type='submit']),
   .form textarea {
     border: none;
-    border-bottom: 3px solid #f1a600;
+    border-bottom: 2px solid #f1a600;
     margin-bottom: 1rem;
     font-size: 1rem;
     outline: none;
@@ -634,7 +719,7 @@ footer {
     border: none;
     background-color: #f1a600;
     color: #242635;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     cursor: pointer;
   }
 
@@ -643,7 +728,7 @@ footer {
     align-items: center;
     text-align: center;
     margin-left: 3rem;
-    padding: 5rem ;
+    padding: 5rem;
   }
 
   .phone {
@@ -675,7 +760,7 @@ footer {
     font-weight: 600;
     color: #fff;
   }
-  
+
   .mail p {
     font-size: 0.8rem;
     font-weight: 400;
