@@ -40,7 +40,7 @@ img {
 footer {
   text-align: center;
   margin: 1.5rem;
-  font-weight: 600;
+  font-weight: 200;
   color: #f1a600;
   background-color: #1f1d2c;
 }
@@ -273,6 +273,15 @@ footer {
     font-weight: 600;
   }
 
+  .download_title {
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  .cv_download {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+  }
+
   /** Experience */
   .experience {
     color: #e5e5e5;
@@ -319,8 +328,8 @@ footer {
 
   .skills__image {
     border-radius: 1rem;
-    width: 5rem;
-    background-color: #e5e5e5;
+    width: 6rem;
+    filter: invert(50%) sepia(7%) saturate(327%) hue-rotate(15deg) brightness(89%) contrast(87%);
   }
 
   .years {
@@ -453,7 +462,7 @@ footer {
   footer {
     text-align: center;
     margin: 1rem;
-    font-weight: 300;
+    font-weight: 200;
     color: #f1a600;
     font-size: 0.8rem;
     background-color: #1f1d2c;
@@ -555,11 +564,21 @@ footer {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    /* gap: 2; */
+    gap: 2;
   }
 
   .about__icons img {
     width: 6rem;
+  }
+
+  .download_title {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .cv_download {
+    background-color: ;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
   }
 
   /** Experience */
@@ -589,7 +608,7 @@ footer {
   .experience3 {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
   }
 
@@ -605,7 +624,8 @@ footer {
   .skills__image {
     border-radius: 1rem;
     width: 5rem;
-    background-color: #e5e5e5;
+    filter: invert(50%) sepia(7%) saturate(327%) hue-rotate(15deg) brightness(89%) contrast(87%);
+    /* background-color: #e5e5e5; */
   }
 
   /* .experience img {
