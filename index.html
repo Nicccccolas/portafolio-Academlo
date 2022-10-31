@@ -5,16 +5,22 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects Nicolas</title>
+  <title>Portafolio Nicolás</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="icon" href="./assets/img/favicon.ico">
   <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body translate="yes">
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <div class="navbar">
     <div class="navbar__container">
 
@@ -35,10 +41,11 @@
   <main class="wrapper">
 
     <section id="home" class="home grid">
-      <div class="home__content flex items-center">
+      <div data-aos="fade-right" data-aos-offset="350" data-aos-easing="ease-in-sine" data-aos-duration="1000"
+        class="home__content">
 
         <div class="home__info flex">
-          <h2 class="home__name"><span>Nicolás</span> Pantoja</h2>
+          <h2 class="home__name"><span class="home__name-span">Nicolás</span> Pantoja</h2>
           <p class="home__description">Desarollador Web Full Stack con conocimientos en Front-End: HTML5, CSS3, REACTJS
           </p>
         </div>
@@ -47,122 +54,170 @@
           <img src="./assets/img/photoDesktop.jpg" alt="Profile image">
         </div>
 
-        <div class="home__social">
-          <p class="home__skill"><span>+1 año</span><br> de experiencia</p>
+        <div class="home__icons-container">
+
           <div class="home__icons flex">
-            <a href="http://instagram.com/veinteveintes" target="_blank">
-              <img src="./assets/img/instagram.svg" alt="Intagram">
-            </a>
-            <a href="https://www.linkedin.com/in/nicopantojadiaz/" target="_blank">
-              <img src="./assets/img/linkedin.svg" alt="LinkedIn">
-            </a>
-            <a href="http://twitter.com" target="_blank">
-              <img src="./assets/img/twitter.svg" alt="Twitter">
-            </a>
+
+            <img class="home__logo" src="./assets/img/javascript.svg" alt="LinkedIn">
+            <img class="home__logo" src="./assets/img/html5.svg" alt="LinkedIn">
+            <img class="home__logo" src="./assets/img/css3.svg" alt="LinkedIn">
+            <img class="home__logo" src="./assets/img/react.svg" alt="LinkedIn">
+
           </div>
         </div>
-
       </div>
     </section>
 
     <section id="about" class="about grid">
-      <div class="about__content">
+      <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000" class="about__content">
 
         <div class="about__info">
           <h2 class="about__title"> Acerca de mí</h2>
-          <p class="about__description">¡Hola! Soy Nicolas Pantoja. Apasionado por construir soluciones excepcionales
-            que vivan en la web. Tengo experiencia como gerente, logística y trabajo en equipo, donde he desarollado
-            habilidaddes para soluciones óptimas de problemas que se reflejan en mis desarrollos. Soy un apasionado por
-            la música, la cuál me inspira para poder crear. Además de aprender de forma autodidacta y con actitud
-            proactiva, en el 2022 empecé un BootCamp de Programación Web Full-Stack.
+          <p class="about__description">¡Hola! Soy <span class="about__description-span">Nicolás Pantoja</span>.
+            Apasionado por construir soluciones excepcionales
+            que vivan en la web. Tengo experiencia como asesor y gerente donde he desarollado habilidades para dar
+            soluciones óptimas de problemas, las cuales teniendo un grupo unido y trabajando en conjunto, además de un
+            buen control de zona en temas como logistica y manejo de clientes, lograba resolver con la mayor disposición
+            y de la mejor manera. Soy un apasionado por
+            la música y la moda, lo cuál me inspira para poder ser creativo y minusioso, algo que lo puedo demostrar en
+            mis proyectos.
           </p>
         </div>
 
-        <div class="about__icons">
-          <div class="item1">
-            <img src="./assets/img/academlo.jpg" alt="Academlo">
-            <p><span>Academlo </span><br> 2022</p>
+        <div class="about__icons-container">
+          <div class="about__icons">
+            <img class="about__icons-img" src="./assets/img/academlo.jpg" alt="Academlo">
+            <p class="about__icons-title"><span class="about__title-span">Academlo </span><br> 2022</p>
           </div>
 
-          <div class="about__download">
-            <a download="CV-Nicolas" href="./assets/archives/CV - Nicolas Pantoja Diaz-1.pdf"><img class="cv_download" src="./assets/img/cv_logo.png" alt="Curriculum Vitæ"></a>
-            <h2 class="download_title">Descargar CV</h2>
+          <div class="about__icons">
+            <a download="CV-Nicolas" href="./assets/archives/CV - Nicolas Pantoja Diaz-1.pdf">
+              <img class="about__icons-img" src="./assets/img/cv_logo.png" alt="Curriculum Vitæ"></a>
+            <p class="about__icons-title">Descargar CV</p>
           </div>
-          <!-- <div class="item1">
-            <img src="./assets/img/image_9.jpg" alt="UVL">
-            <p><span>UVM </span><br> 2011 - 2016</p> 
-          </div> -->
         </div>
 
       </div>
     </section>
 
-    <section id="experience" class="experience">
-      <div class="experience__content">
+    <section id="experience" class="experience-container">
 
+      <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000"
+        class="experience">
         <h2 class="experience__title">Experiencia</h2>
 
-        <div class="experience1">
-          <div class="skills__image">
-            <img src="./assets/img/logoKoaj.svg" alt="KOAJ - INVECO" width=32px">
+        <div class="experience__content">
+          <div class="experience_info">
+            <img class="experience_info-img" src="./assets/img/logoKoaj.svg" alt="KOAJ - INVECO" width=32px">
+            <div class="experience_info-items">
+              <h3 class="experience_info-title">KOAJ - Inveco</h3>
+              <p class="experience_item"><span class="experience_item-span">Asesor</span> 2015 - 2017</p>
+              <p class="experience_item"><span class="experience_item-span">Gerente Zona</span> 2017 - 2022</p>
+            </div>
           </div>
-          <div class="experience__description">
-            <p><span>KOAJ</span><br>Gerente Zona<br>2016 - 2022</p>
-          </div>
-          <div class="years">
-            <p>6 años</p>
+          <div class="experience_description">
+            <ul class="experience_list">
+              <li class="experience_list-items"><span class="experience_span">Creatividad: </span> Seguimiento y
+                cumplimiento en merchandising</li>
+              <li class="experience_list-items"><span class="experience_span">Trabajo en equipo: </span>Desarrollo de
+                labores y presentación en conjunto</li>
+              <li class="experience_list-items"><span class="experience_span">Cumplimiento:</span>Control de metas
+                propuestas y posicionamiento destacado de zona a nivel
+                nacional</li>
+            </ul>
+
+            <ul class="experience_list">
+              <li class="experience_list-items"><span class="experience_span">Comunicación: </span>Muy buena
+                presentacióny
+                descripciones de producto. Unión entre equipo</li>
+              <li class="experience_list-items"><span class="experience_span">Resolución de problemas: </span>Rápida
+                actuación ante emergencías, consultar fuentes de
+                información para saber actuar.</li>
+              <li class="experience_list-items"><span class="experience_span">Liderazgo: </span>Acompañamiento en todos
+                los sectores, trabajo de la mano.</li>
+            </ul>
           </div>
         </div>
-
-        <div class="experience2">
-          <div class="skills__image">
-            <img src="./assets/img/amazon.svg" alt="Amazon">
-          </div>
-          <div class="experience__description">
-            <p><span>Amazon</span><br>Jr UX/UI <br>2022</p>
-          </div>
-          <div class="years">
-            <p>1 año</p>
-          </div>
-        </div>
-
-        <div class="experience2">
-          <div class="skills__image">
-            <img src="./assets/img/google.svg" alt="Google">
-          </div>
-          <div class="experience__description">
-            <p><span>Google</span><br>Producto Designer<br>Actualidad</p>
-          </div>
-          <div class="years">
-            <p>1 año</p>
-          </div>
-        </div>
-
       </div>
+
     </section>
 
-    <section id="projects" class="projects">
+    <section id="projects" class="projects-container">
 
-      <h2 class="project__title">Mis Proyectos</h2>
-      <div class="project__content">
-        <div class="project">
-          <div class="project1__container">
-            <img src="./assets/img/image1.jpg" alt="Proyecto 1">
+      <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
+        <h2 class="project__title">Mis Proyectos</h2>
+
+        <div class="project__content">
+          <div class="project">
+            <video controls muted src="./assets/video/project1.mp4"></video>
+            <div class="project_info">
+              <a href="https://randomquote-nicolas.netlify.app/" target="_blank">
+                <h3 class="project_name">RandomQuote</h3>
+              </a>
+              <ul class="project_list">
+                <li class="project_list-item">Aplicación de React con Vitejs, la cuál muestra una cita al azar al dar
+                  click.</li>
+                <li class="project_list-item"><span class="project_list-span">Tiempo de desarollo: </span>16 horas</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="project">
+            <video controls muted src="./assets/video/project2.mp4"></video>
+            <div class="project_info">
+              <a href="https://weatherapp-nicolas.netlify.app/" target="_blank">
+                <h3 class="project_name">WeatherApp</h3>
+              </a>
+              <ul class="project_list">
+                <li class="project_list-item">Obteniendo la latitud y longitud através de la API de "Open Weather",
+                  desarollé esta app que muestra los datos del clima del lugar geolocalizado.</li>
+                <li class="project_list-item"><span class="project_list-span">Tiempo de desarrollo: </span>26 horas</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="project">
+            <video controls muted src="./assets/video/project3.mp4"></video>
+            <div class="project_info">
+              <a href="https://rickandmortyapp-bynico.netlify.app/" target="_blank">
+                <h3 class="project_name">Rick & Morty</h3>
+              </a>
+              <ul class="project_list">
+                <li class="project_list-item">Usando la API de Rick and Morty, obtuve información de una ubicacion
+                  aleatoria, además que muestra la información de cada uno de los ressidentes de dicha ubicacion.</li>
+                <li class="project_list-item"><span class="project_list-span">Tiempo de desarollo: </span>46 horas</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="project">
+            <video controls muted src="./assets/video/project4.mp4"></video>
+            <div class="project_info">
+              <a href="https://github.com/Nicccccolas/crud-users" target="_blank">
+                <h3 class="project_name">CRUD Users</h3>
+              </a>
+              <ul class="project_list">
+                <li class="project_list-item">Una app en el cuál podemos administrar usuarios a través de un CRUD.
+                  Podemos
+                  crear, editar y elimar usuarios.</li>
+                <li class="project_list-item"><span class="project_list-span">Tiempo de desarollo: </span> 5 días</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="project">
+            <video controls muted src="./assets/video/project5.mp4"></video>
+            <div class="project_info">
+              <a href="https://pokeniko.netlify.app/" target="_blank">
+                <h3 class="project_name">Pokédex</h3>
+              </a>
+              <ul class="project_list">
+                <li class="project_list-item">Através de una API, logré desplegar esta app que contiene información detallada de todos los pokemon. Se destaca por su interfaz y su buena interacción con el usuario, para generar una buena experiencia.</li>
+                <li class="project_list-item"><span class="project_list-span">Tiempo de desarollo: </span> 7 días</li>
+              </ul>
+            </div>
           </div>
         </div>
-
-        <div class="project">
-          <div class="project2__container">
-            <img src="./assets/img/image2.jpg" alt="Proyecto 2">
-          </div>
-        </div>
-
-        <div class="project">
-          <div class="project3__container">
-            <img src="./assets/img/image3.jpg" alt="Proyecto 3">
-          </div>
-        </div>
-
       </div>
     </section>
 
@@ -170,52 +225,62 @@
 
       <h2 class="contact__title">Contacto</h2>
 
-      <div class="contact__items">
+      <div 
+        data-aos="zoom-out-right"
+        data-aos-duration="2000"
+        class="contact__items-container">
 
-        <div class="contact__form">
-          <header class="header__contact">
-            <span class="header__image">
-              <i class='bx bx-send'></i>
-            </span>
-          </header>
-          <form action="" class="form">
-            <label for="name">Nombres</label>
-            <input type="text" name="name" id="name">
-
-            <label for="mail">Email</label>
-            <input type="text" name="mail" id="mail">
-
-            <label for="phone">Telefono</label>
-            <input type="text" name="phone" id="phone">
-
-            <label for="message">Mensaje</label>
-            <textarea name="message" id="message"></textarea>
-            <input type="submit" value="Enviar">
-          </form>
+        <div class="contact_item">
+          <a href="https://api.whatsapp.com/send?phone=573104252781">
+            <img class="contact__logo" src="./assets/img/whatsapp.svg" alt="Whatsapp">
+            <p>Whatsapp</p>
+          </a>
         </div>
 
-        <div class="contact__icons">
-          <div class="phone">
-            <a href="tel:+573104252781">
-              <img src="./assets/img/phone.svg" alt="Telefono">
-              <p><span>Llámame</span><br>+57(310)425-2781</p></a>
-          </div>
-
-          <div class="mail">
-            <a href="mailto:nicolaspantojadi@gmail.com?Subject=Interesado%20en%20:%20"><img src="./assets/img/mail.svg" alt="Correo electrónico">
-              <p><span>Email</span><br>Contactar por email</p>
-            </a>
-          </div>
+        <div class="contact_item">
+          <a href="mailto:nicolaspantojadi@gmail.com?Subject=Interesado%20en%20:%20"><img class="contact__logo"
+              src="./assets/img/gmail.svg" alt="Correo electrónico">
+            <p>Mail</p>
+          </a>
         </div>
 
-      </div>
+        <div class="contact_item">
+          <a href="https://www.linkedin.com/in/nicopantojadiaz/" target="_blank">
+            <img class="contact__logo" src="./assets/img/linkedin.svg" alt="LinkedIn">
+            <p>LinkedIn</p>
+          </a>
+        </div>
+
+        <div class="contact_item">
+          <a href="https://github.com/Nicccccolas" target="_blank">
+            <img class="contact__logo" src="./assets/img/github.svg" alt="GitHub">
+            <p>GitHub</p>
+          </a>
+        </div>
 
       </div>
     </section>
   </main>
-  <footer>
-    Nicolás Pantoja Díaz - 2022
+
+  <footer class="footer">
+    <div class="footer-container">
+      <ul class="footer_list">
+        <li class="footer_items"><a href="tel:573104252781">Llámame </a><span class="footer_span">+57 310 425
+            2781</span></li>
+        <li class="footer_items">Oficina: Av. Panamericana Cll 1a-05 <br> Heraldo Romero - Mz A C 13 </li>
+      </ul>
+    </div>
+    <div class="footer-container">
+      <ul class="footer_list">
+        <li class="footer_items">
+          <a download="CV-Nicolas" href="./assets/archives/CV - Nicolas Pantoja Diaz-1.pdf">Descargar CV</li></a>
+        <li class="footer_items">Nicolás Pantoja Díaz</li>
+        <li class="footer_items">Colombia - 2022</li>
+      </ul>
+    </div>
+
   </footer>
+
   <script src="assets/js/main.js"></script>
 </body>
 
