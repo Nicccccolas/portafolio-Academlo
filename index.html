@@ -45,7 +45,7 @@
         class="home__content">
 
         <div class="home__info flex">
-          <h2 class="home__name"><span class="home__name-span">Nicolás</span> Pantoja</h2>
+          <h2 class="home__name"><span class="home__name-span">Nicolás</span> <span class="home__name-span">Pantoja</span></h2>
           <p class="home__description">Desarollador Web Full Stack con conocimientos en Front-End: HTML5, CSS3, REACTJS
           </p>
         </div>
@@ -69,9 +69,8 @@
     </section>
 
     <section id="about" class="about grid">
-      <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000" class="about__content">
+      <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000" class="about__content">
 
-        <div class="about__info">
           <h2 class="about__title"> Acerca de mí</h2>
           <p class="about__description">¡Hola! Soy <span class="about__description-span">Nicolás Pantoja</span>.
             Apasionado por construir soluciones excepcionales
@@ -82,7 +81,6 @@
             la música y la moda, lo cuál me inspira para poder ser creativo y minusioso, algo que lo puedo demostrar en
             mis proyectos.
           </p>
-        </div>
 
         <div class="about__icons-container">
           <div class="about__icons">
@@ -91,12 +89,12 @@
           </div>
 
           <div class="about__icons">
-            <a download="CV-Nicolas" href="./assets/archives/CV - Nicolas Pantoja Diaz-1.pdf">
+            <a download="CV-Nicolas" href="./assets/archives/CV - Nicolas Pantoja Diaz.pdf">
               <img class="about__icons-img" src="./assets/img/cv_logo.png" alt="Curriculum Vitæ"></a>
             <p class="about__icons-title">Descargar CV</p>
           </div>
         </div>
-
+        <!-- <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3lkC8NHfGaFqk0VrkjarGs?utm_source=generator" width="50%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> -->
       </div>
     </section>
 
@@ -121,7 +119,7 @@
                 cumplimiento en merchandising</li>
               <li class="experience_list-items"><span class="experience_span">Trabajo en equipo: </span>Desarrollo de
                 labores y presentación en conjunto</li>
-              <li class="experience_list-items"><span class="experience_span">Cumplimiento:</span>Control de metas
+              <li class="experience_list-items"><span class="experience_span">Cumplimiento: </span>Control de metas
                 propuestas y posicionamiento destacado de zona a nivel
                 nacional</li>
             </ul>
@@ -149,7 +147,7 @@
 
         <div class="project__content">
           <div class="project">
-            <video controls muted src="./assets/video/project1.mp4"></video>
+            <img src="/assets/img/imgProjects/project1.jpg" alt="Proyecto Random">
             <div class="project_info">
               <a href="https://randomquote-nicolas.netlify.app/" target="_blank">
                 <h3 class="project_name">RandomQuote</h3>
@@ -157,13 +155,12 @@
               <ul class="project_list">
                 <li class="project_list-item">Aplicación de React con Vitejs, la cuál muestra una cita al azar al dar
                   click.</li>
-                <li class="project_list-item"><span class="project_list-span">Tiempo de desarollo: </span>16 horas</li>
               </ul>
             </div>
           </div>
 
           <div class="project">
-            <video controls muted src="./assets/video/project2.mp4"></video>
+            <img src="/assets/img/imgProjects/project2.jpg" alt="Proyecto Wheater">
             <div class="project_info">
               <a href="https://weatherapp-nicolas.netlify.app/" target="_blank">
                 <h3 class="project_name">WeatherApp</h3>
@@ -171,13 +168,12 @@
               <ul class="project_list">
                 <li class="project_list-item">Obteniendo la latitud y longitud através de la API de "Open Weather",
                   desarollé esta app que muestra los datos del clima del lugar geolocalizado.</li>
-                <li class="project_list-item"><span class="project_list-span">Tiempo de desarrollo: </span>26 horas</li>
               </ul>
             </div>
           </div>
 
           <div class="project">
-            <video controls muted src="./assets/video/project3.mp4"></video>
+            <img src="/assets/img/imgProjects/project3.jpg" alt="Proyecto Rick and Morty">
             <div class="project_info">
               <a href="https://rickandmortyapp-bynico.netlify.app/" target="_blank">
                 <h3 class="project_name">Rick & Morty</h3>
@@ -185,13 +181,13 @@
               <ul class="project_list">
                 <li class="project_list-item">Usando la API de Rick and Morty, obtuve información de una ubicacion
                   aleatoria, además que muestra la información de cada uno de los ressidentes de dicha ubicacion.</li>
-                <li class="project_list-item"><span class="project_list-span">Tiempo de desarollo: </span>46 horas</li>
               </ul>
             </div>
           </div>
 
           <div class="project">
-            <video controls muted src="./assets/video/project4.mp4"></video>
+            <img src="" alt="">
+            <img src="/assets/img/imgProjects/project4.jpg" alt="Proyecto CRUD">
             <div class="project_info">
               <a href="https://github.com/Nicccccolas/crud-users" target="_blank">
                 <h3 class="project_name">CRUD Users</h3>
@@ -200,20 +196,21 @@
                 <li class="project_list-item">Una app en el cuál podemos administrar usuarios a través de un CRUD.
                   Podemos
                   crear, editar y elimar usuarios.</li>
-                <li class="project_list-item"><span class="project_list-span">Tiempo de desarollo: </span> 5 días</li>
               </ul>
             </div>
           </div>
 
           <div class="project">
-            <video controls muted src="./assets/video/project5.mp4"></video>
+            <img src="/assets/img/imgProjects/project5.jpg" alt="Proyecto Pokedex">
             <div class="project_info">
               <a href="https://pokeniko.netlify.app/" target="_blank">
                 <h3 class="project_name">Pokédex</h3>
               </a>
               <ul class="project_list">
-                <li class="project_list-item">Através de una API, logré desplegar esta app que contiene información detallada de todos los pokemon. Se destaca por su interfaz y su buena interacción con el usuario, para generar una buena experiencia.</li>
-                <li class="project_list-item"><span class="project_list-span">Tiempo de desarollo: </span> 7 días</li>
+                <li class="project_list-item">Através de una API, logré desplegar esta app que contiene información
+                  detallada de todos los pokemon. Se destaca por su interfaz y su buena interacción con el usuario, para
+                  generar una buena experiencia.</li>
+                
               </ul>
             </div>
           </div>
@@ -225,36 +222,33 @@
 
       <h2 class="contact__title">Contacto</h2>
 
-      <div 
-        data-aos="zoom-out-right"
-        data-aos-duration="2000"
-        class="contact__items-container">
+      <div data-aos="zoom-out-right" data-aos-duration="2000" class="contact__items-container">
 
         <div class="contact_item">
           <a href="https://api.whatsapp.com/send?phone=573104252781">
             <img class="contact__logo" src="./assets/img/whatsapp.svg" alt="Whatsapp">
-            <p>Whatsapp</p>
+            <p class="contact_name">Whatsapp</p>
           </a>
         </div>
 
         <div class="contact_item">
           <a href="mailto:nicolaspantojadi@gmail.com?Subject=Interesado%20en%20:%20"><img class="contact__logo"
               src="./assets/img/gmail.svg" alt="Correo electrónico">
-            <p>Mail</p>
+            <p class="contact_name">Mail</p>
           </a>
         </div>
 
         <div class="contact_item">
           <a href="https://www.linkedin.com/in/nicopantojadiaz/" target="_blank">
-            <img class="contact__logo" src="./assets/img/linkedin.svg" alt="LinkedIn">
-            <p>LinkedIn</p>
+            <img class="contact__logo" src="./assets/img/linkedin2.svg" alt="LinkedIn">
+            <p class="contact_name">LinkedIn</p>
           </a>
         </div>
 
         <div class="contact_item">
           <a href="https://github.com/Nicccccolas" target="_blank">
             <img class="contact__logo" src="./assets/img/github.svg" alt="GitHub">
-            <p>GitHub</p>
+            <p class="contact_name">GitHub</p>
           </a>
         </div>
 
@@ -265,15 +259,16 @@
   <footer class="footer">
     <div class="footer-container">
       <ul class="footer_list">
-        <li class="footer_items"><a href="tel:573104252781">Llámame </a><span class="footer_span">+57 310 425
-            2781</span></li>
+        <li class="footer_items"><a href="tel:573104252781">Llámame <span class="footer_span">+57 3104252781</span></a>
+        </li>
         <li class="footer_items">Oficina: Av. Panamericana Cll 1a-05 <br> Heraldo Romero - Mz A C 13 </li>
       </ul>
     </div>
     <div class="footer-container">
       <ul class="footer_list">
         <li class="footer_items">
-          <a download="CV-Nicolas" href="./assets/archives/CV - Nicolas Pantoja Diaz-1.pdf">Descargar CV</li></a>
+          <a download="CV-Nicolas" href="./assets/archives/CV - Nicolas Pantoja Diaz.pdf">Descargar CV
+        </li></a>
         <li class="footer_items">Nicolás Pantoja Díaz</li>
         <li class="footer_items">Colombia - 2022</li>
       </ul>
